@@ -38,3 +38,19 @@ while (number <= 20) {
   console.log(number);
   number += 1;
 }
+
+//Додаткове з практики
+let input;
+let total = 0;
+while (true) {
+  input = prompt("Введіть число:");
+  if (input === null) {
+    break;
+  }
+  if (isNaN(input)) {
+    alert("Було написано не число, спробуйте ще раз");
+  } else {
+    total += Number(input);
+  }
+}
+alert(`Загальна сума чисел дорівнює ${total}`);
